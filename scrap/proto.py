@@ -77,11 +77,18 @@ openai.api_key = secrets.myOpenaiKey
 logName = (datetime.datetime.now()).strftime("%Y%m%d-%H%M%S%f")+".log"
 sessionID = hashlib.md5(logName.encode()).hexdigest()
 
+print("Log file:  "+logName)
+logFile = open(logName,"a")
+logFile.write("Session ID:  "+sessionID)
 print("Hello. I am DANA (""Do Anything Now and Again""). What can I do for you?")
 myprompt = input("User: ")
 while not myprompt == "exit":
     dansAnswer = sendPrompt(constructThePrompt(myprompt))
     print("=====\nDANA: "+dansAnswer)
     userList += [myprompt]
+    logFile.write("User: "+myprompt)
     gptList += [dansAnswer]
+    logFile.write("DANA: "+dansAnswer)
+    logFile.flush()
     myprompt = input("User: ")
+logFile.close()

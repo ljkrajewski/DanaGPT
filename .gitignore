@@ -1,5 +1,6 @@
 secrets.py
 scrap/secrets.py
+scrap/*.log
 include/
 lib/
 lib64/
