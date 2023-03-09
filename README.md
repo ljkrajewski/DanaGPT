@@ -2,7 +2,7 @@
 A (future) FLASK application to give a ChatGPT-like experience without the hassle of OpenAI's content policy.
 
 ## Requirements
-- (optional) Python virtual environment (always recommended)
+- (optional) Python [virtual environment](https://python.land/virtual-environments/virtualenv) (always recommended)
 - An [OpenAI API key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key).
 - Install OpenAI python module `pip3 install openai`
 
