@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import random
+#import random
+import datetime
 import hashlib
 import openai
 import secrets
@@ -73,7 +74,8 @@ userList = []
 debug = True
 debug_verbose = False
 openai.api_key = secrets.myOpenaiKey
-sessionID = hashlib.md5(str(random.random()).encode()).hexdigest()
+logName = (datetime.datetime.now()).strftime("%Y%m%d-%H%M%S%f")
+sessionID = hashlib.md5(logName.encode()).hexdigest()
 
 print("Hello. I am DANA (""Do Anything Now and Again""). What can I do for you?")
 myprompt = input("User: ")
