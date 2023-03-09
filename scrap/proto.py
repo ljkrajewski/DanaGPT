@@ -74,7 +74,7 @@ userList = []
 debug = True
 debug_verbose = False
 openai.api_key = secrets.myOpenaiKey
-logName = (datetime.datetime.now()).strftime("%Y%m%d-%H%M%S%f")
+logName = (datetime.datetime.now()).strftime("%Y%m%d-%H%M%S%f")+".log"
 sessionID = hashlib.md5(logName.encode()).hexdigest()
 
 print("Hello. I am DANA (""Do Anything Now and Again""). What can I do for you?")
