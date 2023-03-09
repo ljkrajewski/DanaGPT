@@ -3,6 +3,7 @@ scrap/secrets.py
 include/
 lib/
 lib64/
+lib64
 .git
 bin/
 pyvenv.cfg
