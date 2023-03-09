@@ -20,6 +20,7 @@ A (future) FLASK application to give a ChatGPT-like experience without the hassl
 
 ## To do:
 - Write the base README
+- Change prompt/message to an array of strings (instead of one large string).
 - Experiment between [text completion](https://platform.openai.com/docs/guides/completion) and [chat](https://platform.openai.com/docs/guides/chat) to see difference of responses.
 - Construct a better prompt (see [Chat Completions/Introduction](https://platform.openai.com/docs/guides/chat/introduction))
 - Add logging to prototype
