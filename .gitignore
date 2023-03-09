@@ -1,0 +1,10 @@
+secrets.py
+scrap/secrets.py
+include/
+lib/
+lib64/
+.git
+bin/
+pyvenv.cfg
+__pycache__
+scrap/__pycache__
