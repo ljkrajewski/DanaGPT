@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import random
 import hashlib
-from secrets import *
+import openai
+import secrets
 
 def count_words(string): 
     word_list = string.split() 
@@ -71,6 +72,7 @@ gptList = []
 userList = []
 debug = True
 debug_verbose = False
+openai.api_key = secrets.myOpenaiKey
 sessionID = hashlib.md5(str(random.random()).encode()).hexdigest()
 
 print("Hello. I am DANA (""Do Anything Now and Again""). What can I do for you?")
