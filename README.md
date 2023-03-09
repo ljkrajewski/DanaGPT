@@ -20,6 +20,7 @@ A (future) FLASK application to give a ChatGPT-like experience without the hassl
 
 ## To do:
 - Write the base README
+- Construct a better prompt (see [Chat Completions/Introduction](https://platform.openai.com/docs/guides/chat/introduction))
 - Add logging to prototype
 - Use [_OpenAI.tiktoken_](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb) to count tokens.
 
