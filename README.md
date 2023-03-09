@@ -4,7 +4,7 @@ A (future) FLASK application to give a ChatGPT-like experience without the hassl
 ## Requirements
 - (optional) Python virtual environment (always recommended)
 - An [OpenAI API key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key).
-- Install OpenAI python module `pip3 install openap`
+- Install OpenAI python module `pip3 install openai`
 
 ## File descriptions
 | Filename | Description |
