@@ -16,6 +16,7 @@ A (future) FLASK application to give a ChatGPT-like experience without the hassl
 | secrets.py-example | Sample Python file that holds your OpenAI API key |
 | scrap/ | Pieces used for development and testing |
 | scrap/proto-text.py | Command line-based demo of DanaGPT |
+| scrap/summary-test.py | A quick test of the summarizing routine (for when there are too many tokens in the prompt) |
 
 ## How to use
 - Copy _secrets.py-example_ to _secrets.py_.
@@ -28,7 +29,8 @@ A (future) FLASK application to give a ChatGPT-like experience without the hassl
 - Construct a better prompt (see [Chat Completions/Introduction](https://platform.openai.com/docs/guides/chat/introduction))
 - ~~Add logging to prototype~~
 - ~~Use [_OpenAI.tiktoken_](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb) to count tokens.~~
-- Write summarizing routine for when number of tokens exceed the maximum allowed.
+- ~~Write summarizing routine for when number of tokens exceed the maximum allowed.~~
+- Determine why the summarizing routine only works once, then returns a blank summary.
 
 ## Misc. info
 - [OpenAI chat API info](https://platform.openai.com/docs/guides/chat/introduction)
