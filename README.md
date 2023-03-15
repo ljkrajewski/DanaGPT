@@ -34,3 +34,4 @@ A (future) FLASK application to give a ChatGPT-like experience without the hassl
 
 ## Misc. info
 - [OpenAI chat API info](https://platform.openai.com/docs/guides/chat/introduction)
+- [openai/openai-python module (github)](https://github.com/openai/openai-python)
