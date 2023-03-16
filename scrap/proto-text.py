@@ -3,6 +3,7 @@ import datetime
 import hashlib
 import tiktoken
 import secrets
+import re
 
 class DanaGPT:
     def __init__(self):
@@ -87,7 +88,7 @@ class DanaGPT:
             frequency_penalty=1.5,
             user=self.sessionID,
         )
-        return completion.choices[0].text
+        return re.sub("^(\s)","",re.sub("DANA: ","",completion.choices[0].text))
 
     def print_debug(self,myPrompt):
         if self.debug_tokens or self.debug_summary or self.debug_prompt:
