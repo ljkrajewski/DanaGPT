@@ -92,19 +92,19 @@ class DanaGPT:
 
     def print_debug(self,myPrompt):
         if self.debug_tokens or self.debug_summary or self.debug_prompt:
-            print("DEBUG ===========================================================")
+            print("DEBUG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
         if self.debug_tokens:
             print("Number of tokens:\n" + str(self.count_words(myPrompt)))
-            print("DEBUG ===========================================================")
+            print("DEBUG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
         if self.debug_summary:
             if self.promptSummary == '':
                 print("Summary created:\n  <This space left intentionally blank>")
             else:
                 print("Summary created:\n" + self.promptSummary)
-            print("DEBUG ===========================================================")
+            print("DEBUG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
         if self.debug_prompt:
             print("Prompt sent:\n" + myPrompt)
-            print("DEBUG ===========================================================")
+            print("DEBUG +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 ### Main routine ###
 
