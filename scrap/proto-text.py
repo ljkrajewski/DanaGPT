@@ -71,7 +71,7 @@ class DanaGPT:
     # https://www.codingthesmartway.com/how-to-use-chatgpt-with-python/
     def sendPrompt(self,theprompt):
         import openai
-        openai.api_key = "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"
+        openai.api_key = secrets.myOpenaiKey
 
         # API ref: https://platform.openai.com/docs/api-reference/completions/create
         completion = openai.Completion.create(
