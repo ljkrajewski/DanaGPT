@@ -121,9 +121,9 @@ def main():
         danasAnswer = myDana.sendPrompt(thePrompt)
         print("---------------------------------------\nDANA: "+danasAnswer)
         myDana.userList += [userPrompt]
-        logFile.write("User: "+userPrompt+"\n")
+        logFile.write("=======================================\nUser: "+userPrompt+"\n")
         myDana.gptList += [danasAnswer]
-        logFile.write("DANA: "+danasAnswer+"\n")
+        logFile.write("---------------------------------------\nDANA: "+danasAnswer+"\n")
         logFile.flush()
         userPrompt = input("=======================================\nUser: ")
     logFile.close()
